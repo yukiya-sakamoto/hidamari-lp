@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: #FFFAF5;
+  color: #2D1400;
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (max-width: 767px) {
+  .grid-2      { grid-template-columns: 1fr !important; gap: 24px !important; }
+  .grid-3      { grid-template-columns: 1fr !important; gap: 16px !important; }
+  .grid-4      { grid-template-columns: 1fr 1fr !important; gap: 12px !important; }
+  .footer-grid { grid-template-columns: 1fr !important; gap: 20px !important; }
+  .hide-sp     { display: none !important; }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid-4 { grid-template-columns: repeat(3, 1fr) !important; }
+}
+@media (min-width: 768px) {
+  .show-sp { display: none !important; }
+}
