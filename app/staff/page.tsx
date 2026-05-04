@@ -34,33 +34,31 @@ export default function StaffPage() {
         breadcrumb={[{ label: "ホーム", href: "/" }, { label: "スタッフ紹介", href: "/staff/" }]}
       />
 
-      <main style={{ backgroundColor: "#fff", padding: "80px 28px" }}>
+      <main style={{ backgroundColor: "#FDFAF6", padding: "80px 28px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
 
           {/* 院長 */}
           <div style={{ marginBottom: 72 }}>
-            <div className="sec-eyebrow" style={{ marginBottom: 10 }}>
-              <span style={{ fontSize: 10, color: "#05AF4B", fontWeight: 700, letterSpacing: "0.2em" }}>DIRECTOR</span>
-            </div>
-            <h2 style={{ fontSize: "clamp(20px, 3vw, 32px)", fontWeight: 900, color: "#1A1A1A", marginBottom: 40, letterSpacing: "-0.02em" }}>院長</h2>
+            <span className="sec-label">院長</span>
+            <h2 style={{ fontSize: "clamp(20px, 2.6vw, 28px)", fontWeight: 700, color: "#2D2D2D", marginBottom: 36 }}>院長ご挨拶</h2>
 
-            <div style={{ display: "grid", gridTemplateColumns: "260px 1fr", gap: 48, alignItems: "start" }} className="grid-2">
-              <div style={{ overflow: "hidden", border: "1px solid #FDDCB5" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "260px 1fr", gap: 52, alignItems: "start" }} className="grid-2">
+              <div style={{ borderRadius: 10, overflow: "hidden", boxShadow: "0 4px 16px rgba(0,0,0,0.08)" }}>
                 <img src={DIRECTOR.image} alt={DIRECTOR.name} style={{ width: "100%", height: "auto", display: "block" }} />
               </div>
               <div>
-                <div style={{ fontSize: 11, color: "#05AF4B", fontWeight: 700, letterSpacing: "0.12em", marginBottom: 4 }}>{DIRECTOR.role}</div>
-                <div style={{ fontSize: 32, fontWeight: 900, color: "#1A1A1A", marginBottom: 20 }}>{DIRECTOR.name}</div>
-                <p style={{ fontSize: 13, color: "#555555", lineHeight: 2.0, marginBottom: 14 }}>{DIRECTOR.profile}</p>
-                <div style={{ backgroundColor: "#E6F9EE", border: "1px solid #FDDCB5", padding: "18px 20px", marginBottom: 20 }}>
-                  <p style={{ fontSize: 13, color: "#1A1A1A", lineHeight: 2.0, fontStyle: "italic" }}>「{DIRECTOR.message}」</p>
+                <div style={{ fontSize: 12, color: "#D96B0B", fontWeight: 700, letterSpacing: "0.08em", marginBottom: 4 }}>{DIRECTOR.role}</div>
+                <div style={{ fontSize: 28, fontWeight: 700, color: "#2D2D2D", marginBottom: 20 }}>{DIRECTOR.name}</div>
+                <p style={{ fontSize: 15, color: "#4A4A4A", lineHeight: 2.1, marginBottom: 16 }}>{DIRECTOR.profile}</p>
+                <div style={{ backgroundColor: "#FEF3E8", border: "1px solid #F5DCC2", borderRadius: 10, padding: "18px 22px", marginBottom: 22 }}>
+                  <p style={{ fontSize: 15, color: "#2D2D2D", lineHeight: 2.0, fontStyle: "italic" }}>「{DIRECTOR.message}」</p>
                 </div>
                 <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
                   {DIRECTOR.qualifications.map(q => (
-                    <span key={q} style={{ fontSize: 11, color: "#05AF4B", backgroundColor: "#E6F9EE", border: "1px solid #FDDCB5", padding: "4px 12px" }}>{q}</span>
+                    <span key={q} style={{ fontSize: 12, color: "#05AF4B", backgroundColor: "#EAF7F1", border: "1px solid #A8E0C4", padding: "5px 14px", borderRadius: 20 }}>{q}</span>
                   ))}
                   {DIRECTOR.hobbies.map(h => (
-                    <span key={h} style={{ fontSize: 11, color: "#888888", backgroundColor: "#fff", border: "1px solid #FDDCB5", padding: "4px 12px" }}>趣味：{h}</span>
+                    <span key={h} style={{ fontSize: 12, color: "#888", backgroundColor: "#FDFAF6", border: "1px solid #EDE0CC", padding: "5px 14px", borderRadius: 20 }}>趣味：{h}</span>
                   ))}
                 </div>
               </div>
@@ -69,21 +67,19 @@ export default function StaffPage() {
 
           {/* スタッフ */}
           <div>
-            <div className="sec-eyebrow" style={{ marginBottom: 10 }}>
-              <span style={{ fontSize: 10, color: "#05AF4B", fontWeight: 700, letterSpacing: "0.2em" }}>STAFF MEMBERS</span>
-            </div>
-            <h2 style={{ fontSize: "clamp(20px, 3vw, 32px)", fontWeight: 900, color: "#1A1A1A", marginBottom: 40, letterSpacing: "-0.02em" }}>スタッフ</h2>
+            <span className="sec-label">スタッフ</span>
+            <h2 style={{ fontSize: "clamp(20px, 2.6vw, 28px)", fontWeight: 700, color: "#2D2D2D", marginBottom: 36 }}>スタッフ一同</h2>
 
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gap: 1, backgroundColor: "#FDDCB5" }} className="grid-5">
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gap: 16 }} className="grid-5">
               {STAFF.map(s => (
-                <div key={s.name} style={{ backgroundColor: "#fff" }}>
-                  <div style={{ aspectRatio: "230 / 275", overflow: "hidden", backgroundColor: "#E6F9EE" }}>
+                <div key={s.name} style={{ backgroundColor: "#fff", border: "1px solid #EDE0CC", borderRadius: 10, overflow: "hidden" }}>
+                  <div style={{ aspectRatio: "230 / 275", overflow: "hidden", backgroundColor: "#F7F0E6" }}>
                     <img src={s.image} alt={s.name} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
                   </div>
-                  <div style={{ padding: "20px 16px" }}>
-                    <div style={{ fontSize: 15, fontWeight: 900, color: "#1A1A1A", marginBottom: 4 }}>{s.name}</div>
-                    <div style={{ fontSize: 10, color: "#05AF4B", marginBottom: 10, lineHeight: 1.6 }}>{s.profile}</div>
-                    <p style={{ fontSize: 12, color: "#555555", lineHeight: 1.9 }}>{s.message}</p>
+                  <div style={{ padding: "18px 16px" }}>
+                    <div style={{ fontSize: 15, fontWeight: 700, color: "#2D2D2D", marginBottom: 4 }}>{s.name}</div>
+                    <div style={{ fontSize: 11, color: "#888", marginBottom: 10, lineHeight: 1.6 }}>{s.profile}</div>
+                    <p style={{ fontSize: 13, color: "#4A4A4A", lineHeight: 1.9 }}>{s.message}</p>
                   </div>
                 </div>
               ))}
