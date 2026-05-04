@@ -37,7 +37,7 @@ export default function Pricing() {
                 <div key={label} style={{ display: "grid", gridTemplateColumns: "1fr 90px 90px", borderBottom: "1px solid #FFF0DC" }}>
                   <div style={{ fontSize: 13, color: "#1A1A1A", fontWeight: 600, padding: "12px 0" }}>{label}</div>
                   <div style={{ fontSize: 16, color: "#E8730A", fontWeight: 900, textAlign: "center", padding: "12px 0" }}>{a}</div>
-                  <div style={{ fontSize: 16, color: "#52B788", fontWeight: 700, textAlign: "center", padding: "12px 0" }}>{b}</div>
+                  <div style={{ fontSize: 16, color: "#05AF4B", fontWeight: 700, textAlign: "center", padding: "12px 0" }}>{b}</div>
                 </div>
               ))}
               <p style={{ fontSize: 11, color: "#888", marginTop: 12, lineHeight: 1.8 }}>※ 窓口でいただく金額には、一部実費診療代が含まれる場合がございます。</p>
@@ -45,7 +45,7 @@ export default function Pricing() {
           </div>
 
           <div style={{ backgroundColor: "#fff", border: "1px solid #FDDCB5", borderRadius: 8, overflow: "hidden" }}>
-            <div style={{ backgroundColor: "#52B788", padding: "14px 20px" }}>
+            <div style={{ backgroundColor: "#05AF4B", padding: "14px 20px" }}>
               <div style={{ fontSize: 13, fontWeight: 800, color: "#fff" }}>実費診療一例</div>
             </div>
             <div style={{ padding: "20px" }}>

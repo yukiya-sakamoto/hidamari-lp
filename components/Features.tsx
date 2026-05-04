@@ -7,10 +7,10 @@ const FEATURES = [
 
 export default function Features() {
   return (
-    <section style={{ backgroundColor: "#EBF7F1", padding: "72px 28px" }}>
+    <section style={{ backgroundColor: "#E6F9EE", padding: "72px 28px" }}>
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
         <div style={{ textAlign: "center", marginBottom: 40 }}>
-          <span className="sec-label" style={{ display: "block", color: "#52B788" }}>WHY CHOOSE US</span>
+          <span className="sec-label" style={{ display: "block", color: "#05AF4B" }}>WHY CHOOSE US</span>
           <h2 style={{ fontSize: "clamp(20px, 3vw, 32px)", fontWeight: 900, color: "#1A1A1A" }}>選ばれる4つの理由</h2>
         </div>
 

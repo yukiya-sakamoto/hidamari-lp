@@ -26,7 +26,7 @@ export default function SymptomsPage() {
             {SYMPTOMS.map(s => (
               <Link key={s.slug} href={`/symptoms/${s.slug}/`}
                 style={{ backgroundColor: "#fff", padding: "32px 24px", textDecoration: "none", display: "block" }}>
-                <div style={{ width: 36, height: 3, backgroundColor: "#52B788", marginBottom: 16 }} />
+                <div style={{ width: 36, height: 3, backgroundColor: "#05AF4B", marginBottom: 16 }} />
                 <div style={{ fontSize: 16, fontWeight: 900, color: "#1A1A1A", marginBottom: 8 }}>{s.name}</div>
                 <div style={{ fontSize: 12, color: "#555555", lineHeight: 1.7, marginBottom: 16 }}>{s.desc}</div>
                 <div style={{ fontSize: 11, color: "#E8730A", fontWeight: 700 }}>詳細を見る →</div>
@@ -34,8 +34,8 @@ export default function SymptomsPage() {
             ))}
           </div>
 
-          <div style={{ marginTop: 64, backgroundColor: "#F0F7F3", border: "1px solid #FDDCB5", padding: "32px 36px" }}>
-            <div style={{ fontSize: 11, color: "#52B788", fontWeight: 700, letterSpacing: "0.12em", marginBottom: 12 }}>お問い合わせ</div>
+          <div style={{ marginTop: 64, backgroundColor: "#E6F9EE", border: "1px solid #FDDCB5", padding: "32px 36px" }}>
+            <div style={{ fontSize: 11, color: "#05AF4B", fontWeight: 700, letterSpacing: "0.12em", marginBottom: 12 }}>お問い合わせ</div>
             <div style={{ fontSize: 16, fontWeight: 900, color: "#1A1A1A", marginBottom: 8 }}>「こんな症状はみてもらえる？」お気軽にご相談ください</div>
             <div style={{ fontSize: 13, color: "#555555", marginBottom: 20, lineHeight: 1.8 }}>掲載以外の症状でもお気軽にご来院ください。予約不要・当日来院OK です。</div>
             <a href="tel:0663193339" style={{ display: "inline-flex", alignItems: "center", gap: 8, backgroundColor: "#E8730A", color: "#fff", padding: "13px 28px", borderRadius: 2, textDecoration: "none", fontSize: 16, fontWeight: 900 }}>

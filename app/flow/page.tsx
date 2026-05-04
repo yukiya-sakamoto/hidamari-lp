@@ -39,7 +39,7 @@ export default function FlowPage() {
                 </div>
                 <div style={{ padding: "40px 48px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 16 }}>
-                    <span style={{ fontSize: 11, fontWeight: 700, color: "#52B788", letterSpacing: "0.1em" }}>{s.n}</span>
+                    <span style={{ fontSize: 11, fontWeight: 700, color: "#05AF4B", letterSpacing: "0.1em" }}>{s.n}</span>
                     <div style={{ width: 1, height: 20, backgroundColor: "#FDDCB5" }} />
                     <h2 style={{ fontSize: 22, fontWeight: 900, color: "#1A1A1A" }}>{s.title}</h2>
                   </div>
@@ -51,7 +51,7 @@ export default function FlowPage() {
 
           <div style={{ marginTop: 64, backgroundColor: "#E8730A", padding: "40px 36px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 24 }}>
             <div>
-              <div style={{ fontSize: 12, color: "#52B788", fontWeight: 700, marginBottom: 8 }}>予約不要・当日来院OK</div>
+              <div style={{ fontSize: 12, color: "#05AF4B", fontWeight: 700, marginBottom: 8 }}>予約不要・当日来院OK</div>
               <div style={{ fontSize: 20, fontWeight: 900, color: "#fff" }}>まずはお気軽にご来院ください</div>
             </div>
             <a href="tel:0663193339" style={{ display: "inline-flex", alignItems: "center", gap: 8, backgroundColor: "#E8730A", color: "#fff", padding: "14px 28px", borderRadius: 2, textDecoration: "none", fontSize: 16, fontWeight: 900 }}>

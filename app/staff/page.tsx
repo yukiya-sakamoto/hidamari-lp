@@ -40,7 +40,7 @@ export default function StaffPage() {
           {/* 院長 */}
           <div style={{ marginBottom: 72 }}>
             <div className="sec-eyebrow" style={{ marginBottom: 10 }}>
-              <span style={{ fontSize: 10, color: "#52B788", fontWeight: 700, letterSpacing: "0.2em" }}>DIRECTOR</span>
+              <span style={{ fontSize: 10, color: "#05AF4B", fontWeight: 700, letterSpacing: "0.2em" }}>DIRECTOR</span>
             </div>
             <h2 style={{ fontSize: "clamp(20px, 3vw, 32px)", fontWeight: 900, color: "#1A1A1A", marginBottom: 40, letterSpacing: "-0.02em" }}>院長</h2>
 
@@ -49,15 +49,15 @@ export default function StaffPage() {
                 <img src={DIRECTOR.image} alt={DIRECTOR.name} style={{ width: "100%", height: "auto", display: "block" }} />
               </div>
               <div>
-                <div style={{ fontSize: 11, color: "#52B788", fontWeight: 700, letterSpacing: "0.12em", marginBottom: 4 }}>{DIRECTOR.role}</div>
+                <div style={{ fontSize: 11, color: "#05AF4B", fontWeight: 700, letterSpacing: "0.12em", marginBottom: 4 }}>{DIRECTOR.role}</div>
                 <div style={{ fontSize: 32, fontWeight: 900, color: "#1A1A1A", marginBottom: 20 }}>{DIRECTOR.name}</div>
                 <p style={{ fontSize: 13, color: "#555555", lineHeight: 2.0, marginBottom: 14 }}>{DIRECTOR.profile}</p>
-                <div style={{ backgroundColor: "#F0F7F3", border: "1px solid #FDDCB5", padding: "18px 20px", marginBottom: 20 }}>
+                <div style={{ backgroundColor: "#E6F9EE", border: "1px solid #FDDCB5", padding: "18px 20px", marginBottom: 20 }}>
                   <p style={{ fontSize: 13, color: "#1A1A1A", lineHeight: 2.0, fontStyle: "italic" }}>「{DIRECTOR.message}」</p>
                 </div>
                 <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
                   {DIRECTOR.qualifications.map(q => (
-                    <span key={q} style={{ fontSize: 11, color: "#52B788", backgroundColor: "#F0F7F3", border: "1px solid #FDDCB5", padding: "4px 12px" }}>{q}</span>
+                    <span key={q} style={{ fontSize: 11, color: "#05AF4B", backgroundColor: "#E6F9EE", border: "1px solid #FDDCB5", padding: "4px 12px" }}>{q}</span>
                   ))}
                   {DIRECTOR.hobbies.map(h => (
                     <span key={h} style={{ fontSize: 11, color: "#888888", backgroundColor: "#fff", border: "1px solid #FDDCB5", padding: "4px 12px" }}>趣味：{h}</span>
@@ -70,19 +70,19 @@ export default function StaffPage() {
           {/* スタッフ */}
           <div>
             <div className="sec-eyebrow" style={{ marginBottom: 10 }}>
-              <span style={{ fontSize: 10, color: "#52B788", fontWeight: 700, letterSpacing: "0.2em" }}>STAFF MEMBERS</span>
+              <span style={{ fontSize: 10, color: "#05AF4B", fontWeight: 700, letterSpacing: "0.2em" }}>STAFF MEMBERS</span>
             </div>
             <h2 style={{ fontSize: "clamp(20px, 3vw, 32px)", fontWeight: 900, color: "#1A1A1A", marginBottom: 40, letterSpacing: "-0.02em" }}>スタッフ</h2>
 
             <div style={{ display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gap: 1, backgroundColor: "#FDDCB5" }} className="grid-5">
               {STAFF.map(s => (
                 <div key={s.name} style={{ backgroundColor: "#fff" }}>
-                  <div style={{ aspectRatio: "230 / 275", overflow: "hidden", backgroundColor: "#F0F7F3" }}>
+                  <div style={{ aspectRatio: "230 / 275", overflow: "hidden", backgroundColor: "#E6F9EE" }}>
                     <img src={s.image} alt={s.name} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
                   </div>
                   <div style={{ padding: "20px 16px" }}>
                     <div style={{ fontSize: 15, fontWeight: 900, color: "#1A1A1A", marginBottom: 4 }}>{s.name}</div>
-                    <div style={{ fontSize: 10, color: "#52B788", marginBottom: 10, lineHeight: 1.6 }}>{s.profile}</div>
+                    <div style={{ fontSize: 10, color: "#05AF4B", marginBottom: 10, lineHeight: 1.6 }}>{s.profile}</div>
                     <p style={{ fontSize: 12, color: "#555555", lineHeight: 1.9 }}>{s.message}</p>
                   </div>
                 </div>

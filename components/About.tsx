@@ -38,8 +38,8 @@ export default function About() {
                 ["駐車場完備", "2台・料金当院負担"],
                 ["丁寧な説明", "施術後にプランをご説明"],
               ].map(([title, desc]) => (
-                <div key={title} style={{ backgroundColor: "#EBF7F1", border: "1px solid #A8DDBE", borderRadius: 6, padding: "12px 14px" }}>
-                  <div style={{ fontSize: 11, fontWeight: 800, color: "#52B788", marginBottom: 3 }}>{title}</div>
+                <div key={title} style={{ backgroundColor: "#E6F9EE", border: "1px solid #8FE5B4", borderRadius: 6, padding: "12px 14px" }}>
+                  <div style={{ fontSize: 11, fontWeight: 800, color: "#05AF4B", marginBottom: 3 }}>{title}</div>
                   <div style={{ fontSize: 11, color: "#444", lineHeight: 1.6 }}>{desc}</div>
                 </div>
               ))}

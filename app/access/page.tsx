@@ -47,14 +47,14 @@ export default function AccessPage() {
                   ["保険", "各種保険・交通事故・労災保険取扱"],
                 ].map(([label, val]) => (
                   <div key={label} style={{ display: "flex", gap: 20, borderBottom: "1px solid #FDDCB5", padding: "16px 0", alignItems: "flex-start" }}>
-                    <span style={{ fontSize: 10, color: "#52B788", fontWeight: 700, width: 56, flexShrink: 0, paddingTop: 2, letterSpacing: "0.04em" }}>{label}</span>
+                    <span style={{ fontSize: 10, color: "#05AF4B", fontWeight: 700, width: 56, flexShrink: 0, paddingTop: 2, letterSpacing: "0.04em" }}>{label}</span>
                     <span style={{ fontSize: 13, color: "#1A1A1A", lineHeight: 1.7 }}>{val}</span>
                   </div>
                 ))}
               </div>
 
-              <div style={{ backgroundColor: "#F0F7F3", border: "1px solid #FDDCB5", padding: "20px 24px", marginBottom: 24 }}>
-                <div style={{ fontSize: 10, color: "#52B788", fontWeight: 700, marginBottom: 14, letterSpacing: "0.12em" }}>受付時間</div>
+              <div style={{ backgroundColor: "#E6F9EE", border: "1px solid #FDDCB5", padding: "20px 24px", marginBottom: 24 }}>
+                <div style={{ fontSize: 10, color: "#05AF4B", fontWeight: 700, marginBottom: 14, letterSpacing: "0.12em" }}>受付時間</div>
                 {[
                   ["月〜金", "9:00〜12:00 / 15:00〜20:00"],
                   ["土曜", "9:00〜12:00（午後休）"],
@@ -73,7 +73,7 @@ export default function AccessPage() {
                   06-6319-3339
                 </a>
                 <a href="https://maps.google.com/maps?q=大阪府摂津市正雀本町１丁目20-30" target="_blank" rel="noopener noreferrer"
-                  style={{ display: "block", border: "1px solid #FDDCB5", color: "#52B788", textAlign: "center", padding: "13px", textDecoration: "none", fontSize: 13, fontWeight: 700, borderRadius: 2 }}>
+                  style={{ display: "block", border: "1px solid #FDDCB5", color: "#05AF4B", textAlign: "center", padding: "13px", textDecoration: "none", fontSize: 13, fontWeight: 700, borderRadius: 2 }}>
                   Google マップで見る
                 </a>
               </div>

@@ -36,12 +36,12 @@ export default function Page() {
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 56, alignItems: "start", marginBottom: 80 }} className="grid-2">
             <div>
               <div className="sec-eyebrow" style={{ marginBottom: 12 }}>
-                <span style={{ fontSize: 10, color: "#52B788", fontWeight: 700, letterSpacing: "0.2em" }}>OVERVIEW</span>
+                <span style={{ fontSize: 10, color: "#05AF4B", fontWeight: 700, letterSpacing: "0.2em" }}>OVERVIEW</span>
               </div>
               <h2 style={{ fontSize: "clamp(18px, 2.5vw, 28px)", fontWeight: 900, color: "#1A1A1A", marginBottom: 24, letterSpacing: "-0.02em" }}>{s.name}について</h2>
               <p style={{ fontSize: 14, color: "#555555", lineHeight: 2.2, marginBottom: 24 }}>{s.lead}</p>
-              <div style={{ backgroundColor: "#F0F7F3", border: "1px solid #FDDCB5", padding: "20px 24px" }}>
-                <div style={{ fontSize: 11, color: "#52B788", fontWeight: 700, marginBottom: 10, letterSpacing: "0.08em" }}>当院の施術方針</div>
+              <div style={{ backgroundColor: "#E6F9EE", border: "1px solid #FDDCB5", padding: "20px 24px" }}>
+                <div style={{ fontSize: 11, color: "#05AF4B", fontWeight: 700, marginBottom: 10, letterSpacing: "0.08em" }}>当院の施術方針</div>
                 <p style={{ fontSize: 13, color: "#1A1A1A", lineHeight: 2.0 }}>{s.treatment}</p>
               </div>
             </div>
@@ -54,14 +54,14 @@ export default function Page() {
           {s.cases.length > 0 && (
             <div style={{ marginBottom: 64 }}>
               <div className="sec-eyebrow" style={{ marginBottom: 12 }}>
-                <span style={{ fontSize: 10, color: "#52B788", fontWeight: 700, letterSpacing: "0.2em" }}>PATIENT VOICE</span>
+                <span style={{ fontSize: 10, color: "#05AF4B", fontWeight: 700, letterSpacing: "0.2em" }}>PATIENT VOICE</span>
               </div>
               <h2 style={{ fontSize: "clamp(18px, 2.5vw, 28px)", fontWeight: 900, color: "#1A1A1A", marginBottom: 32, letterSpacing: "-0.02em" }}>患者様の声</h2>
               <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 1, backgroundColor: "#FDDCB5" }} className="grid-3">
                 {s.cases.map((c, i) => (
                   <div key={i} style={{ backgroundColor: "#fff", padding: "28px 24px" }}>
                     <p style={{ fontSize: 13, color: "#1A1A1A", lineHeight: 2.1, marginBottom: 16 }}>{c.text}</p>
-                    <div style={{ fontSize: 11, color: "#52B788", fontWeight: 700, borderTop: "1px solid #FFF0DC", paddingTop: 12 }}>{c.who}</div>
+                    <div style={{ fontSize: 11, color: "#05AF4B", fontWeight: 700, borderTop: "1px solid #FFF0DC", paddingTop: 12 }}>{c.who}</div>
                   </div>
                 ))}
               </div>
@@ -71,7 +71,7 @@ export default function Page() {
           {/* CTA */}
           <div style={{ backgroundColor: "#E8730A", padding: "40px 36px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 24 }}>
             <div>
-              <div style={{ fontSize: 12, color: "#52B788", fontWeight: 700, marginBottom: 8 }}>予約不要・当日来院OK</div>
+              <div style={{ fontSize: 12, color: "#05AF4B", fontWeight: 700, marginBottom: 8 }}>予約不要・当日来院OK</div>
               <div style={{ fontSize: 20, fontWeight: 900, color: "#fff" }}>お気軽にご来院ください</div>
             </div>
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
@@ -85,7 +85,7 @@ export default function Page() {
           </div>
 
           <div style={{ marginTop: 32 }}>
-            <Link href="/symptoms/" style={{ fontSize: 13, color: "#52B788", textDecoration: "none", fontWeight: 600 }}>
+            <Link href="/symptoms/" style={{ fontSize: 13, color: "#05AF4B", textDecoration: "none", fontWeight: 600 }}>
               ← 症状・施術一覧に戻る
             </Link>
           </div>

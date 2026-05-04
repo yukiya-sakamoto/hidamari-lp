@@ -46,10 +46,10 @@ export default function Access() {
               ))}
             </div>
 
-            <div style={{ backgroundColor: "#EBF7F1", border: "1px solid #A8DDBE", borderRadius: 8, padding: "16px 20px", marginBottom: 18 }}>
-              <div style={{ fontSize: 11, color: "#52B788", fontWeight: 700, marginBottom: 12, letterSpacing: "0.06em" }}>受付時間</div>
+            <div style={{ backgroundColor: "#E6F9EE", border: "1px solid #8FE5B4", borderRadius: 8, padding: "16px 20px", marginBottom: 18 }}>
+              <div style={{ fontSize: 11, color: "#05AF4B", fontWeight: 700, marginBottom: 12, letterSpacing: "0.06em" }}>受付時間</div>
               {[["月〜金", "9:00〜12:00 / 15:00〜20:00"], ["土曜", "9:00〜12:00（午後休）"], ["日・祝", "休診"]].map(([day, time]) => (
-                <div key={day} style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid #A8DDBE", padding: "9px 0" }}>
+                <div key={day} style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid #8FE5B4", padding: "9px 0" }}>
                   <span style={{ fontSize: 12, color: "#444", fontWeight: 600 }}>{day}</span>
                   <span style={{ fontSize: 12, color: "#1A1A1A", fontWeight: 700 }}>{time}</span>
                 </div>

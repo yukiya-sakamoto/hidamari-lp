@@ -38,7 +38,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <div style={{ fontSize: 10, color: "#52B788", fontWeight: 700, letterSpacing: "0.14em", marginBottom: 14, paddingBottom: 10, borderBottom: "1px solid rgba(82,183,136,0.25)" }}>MENU</div>
+            <div style={{ fontSize: 10, color: "#05AF4B", fontWeight: 700, letterSpacing: "0.14em", marginBottom: 14, paddingBottom: 10, borderBottom: "1px solid rgba(82,183,136,0.25)" }}>MENU</div>
             {NAV_LINKS.map(([label, href]) => (
               <Link key={label} href={href} style={{ display: "block", fontSize: 12, color: "rgba(255,255,255,0.5)", textDecoration: "none", marginBottom: 10 }}
                 onMouseEnter={e => (e.currentTarget as HTMLElement).style.color = "#E8730A"}
@@ -49,7 +49,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <div style={{ fontSize: 10, color: "#52B788", fontWeight: 700, letterSpacing: "0.14em", marginBottom: 14, paddingBottom: 10, borderBottom: "1px solid rgba(82,183,136,0.25)" }}>症状別</div>
+            <div style={{ fontSize: 10, color: "#05AF4B", fontWeight: 700, letterSpacing: "0.14em", marginBottom: 14, paddingBottom: 10, borderBottom: "1px solid rgba(82,183,136,0.25)" }}>症状別</div>
             {SYMPTOM_LINKS.map(([label, href]) => (
               <Link key={label} href={href} style={{ display: "block", fontSize: 12, color: "rgba(255,255,255,0.5)", textDecoration: "none", marginBottom: 10 }}
                 onMouseEnter={e => (e.currentTarget as HTMLElement).style.color = "#E8730A"}
@@ -60,7 +60,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <div style={{ fontSize: 10, color: "#52B788", fontWeight: 700, letterSpacing: "0.14em", marginBottom: 14, paddingBottom: 10, borderBottom: "1px solid rgba(82,183,136,0.25)" }}>HOURS</div>
+            <div style={{ fontSize: 10, color: "#05AF4B", fontWeight: 700, letterSpacing: "0.14em", marginBottom: 14, paddingBottom: 10, borderBottom: "1px solid rgba(82,183,136,0.25)" }}>HOURS</div>
             <div style={{ fontSize: 12, color: "rgba(255,255,255,0.5)", lineHeight: 2.3 }}>
               月〜金<br /><span style={{ color: "rgba(255,255,255,0.7)", marginLeft: 8 }}>9:00〜12:00 / 15:00〜20:00</span><br />
               土曜<br /><span style={{ color: "rgba(255,255,255,0.7)", marginLeft: 8 }}>9:00〜12:00（午後休）</span><br />

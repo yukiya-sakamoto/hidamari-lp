@@ -38,18 +38,18 @@ export default function PricingPage() {
               </div>
               <div style={{ padding: "28px" }}>
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 100px 100px", marginBottom: 4 }}>
-                  <div style={{ fontSize: 10, color: "#52B788", fontWeight: 700, padding: "8px 0", borderBottom: "1px solid #FFF0DC" }} />
-                  <div style={{ fontSize: 10, color: "#52B788", fontWeight: 700, textAlign: "center", padding: "8px 0", borderBottom: "1px solid #FFF0DC" }}>3割負担</div>
-                  <div style={{ fontSize: 10, color: "#52B788", fontWeight: 700, textAlign: "center", padding: "8px 0", borderBottom: "1px solid #FFF0DC" }}>1割負担</div>
+                  <div style={{ fontSize: 10, color: "#05AF4B", fontWeight: 700, padding: "8px 0", borderBottom: "1px solid #FFF0DC" }} />
+                  <div style={{ fontSize: 10, color: "#05AF4B", fontWeight: 700, textAlign: "center", padding: "8px 0", borderBottom: "1px solid #FFF0DC" }}>3割負担</div>
+                  <div style={{ fontSize: 10, color: "#05AF4B", fontWeight: 700, textAlign: "center", padding: "8px 0", borderBottom: "1px solid #FFF0DC" }}>1割負担</div>
                 </div>
                 {[["初診", "1,500円", "500円"], ["再診", "680円", "200円"]].map(([label, a, b]) => (
                   <div key={label} style={{ display: "grid", gridTemplateColumns: "1fr 100px 100px", borderBottom: "1px solid #FFF0DC" }}>
                     <div style={{ fontSize: 14, color: "#1A1A1A", fontWeight: 600, padding: "16px 0" }}>{label}</div>
                     <div style={{ fontSize: 18, color: "#E8730A", fontWeight: 900, textAlign: "center", padding: "16px 0" }}>{a}</div>
-                    <div style={{ fontSize: 18, color: "#52B788", fontWeight: 700, textAlign: "center", padding: "16px 0" }}>{b}</div>
+                    <div style={{ fontSize: 18, color: "#05AF4B", fontWeight: 700, textAlign: "center", padding: "16px 0" }}>{b}</div>
                   </div>
                 ))}
-                <p style={{ fontSize: 11, color: "#52B788", marginTop: 16, lineHeight: 1.8 }}>
+                <p style={{ fontSize: 11, color: "#05AF4B", marginTop: 16, lineHeight: 1.8 }}>
                   ※ 窓口でいただく金額には、一部実費診療代が含まれる場合がございます。
                 </p>
               </div>
@@ -67,15 +67,15 @@ export default function PricingPage() {
                     <span style={{ fontSize: 13, color: "#E8730A", fontWeight: 700 }}>{price}</span>
                   </div>
                 ))}
-                <p style={{ fontSize: 11, color: "#52B788", marginTop: 16, lineHeight: 1.8 }}>
+                <p style={{ fontSize: 11, color: "#05AF4B", marginTop: 16, lineHeight: 1.8 }}>
                   ※ 症状によっては実費がかかる場合がございます。
                 </p>
               </div>
             </div>
           </div>
 
-          <div style={{ backgroundColor: "#F0F7F3", border: "1px solid #FDDCB5", padding: "28px 32px", maxWidth: 900 }}>
-            <div style={{ fontSize: 12, fontWeight: 700, color: "#52B788", marginBottom: 12 }}>対応保険について</div>
+          <div style={{ backgroundColor: "#E6F9EE", border: "1px solid #FDDCB5", padding: "28px 32px", maxWidth: 900 }}>
+            <div style={{ fontSize: 12, fontWeight: 700, color: "#05AF4B", marginBottom: 12 }}>対応保険について</div>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 16 }}>
               {[
                 ["健康保険", "各種健康保険に対応しています"],
