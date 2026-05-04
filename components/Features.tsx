@@ -7,22 +7,19 @@ const FEATURES = [
 
 export default function Features() {
   return (
-    <section style={{ backgroundColor: "#F0F7F3", padding: "88px 28px", borderTop: "1px solid #C5DBCF" }}>
+    <section style={{ backgroundColor: "#EBF7F1", padding: "72px 28px" }}>
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-        <div style={{ marginBottom: 48 }}>
-          <div className="sec-eyebrow">
-            <span style={{ fontSize: 10, color: "#2D6A4F", fontWeight: 700, letterSpacing: "0.2em" }}>WHY CHOOSE US</span>
-          </div>
-          <h2 style={{ fontSize: "clamp(22px, 3vw, 36px)", fontWeight: 900, color: "#0F2018", letterSpacing: "-0.02em" }}>選ばれる4つの理由</h2>
+        <div style={{ textAlign: "center", marginBottom: 40 }}>
+          <span className="sec-label" style={{ display: "block", color: "#52B788" }}>WHY CHOOSE US</span>
+          <h2 style={{ fontSize: "clamp(20px, 3vw, 32px)", fontWeight: 900, color: "#1A1A1A" }}>選ばれる4つの理由</h2>
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 1, backgroundColor: "#C5DBCF" }} className="grid-4">
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 16 }} className="grid-4">
           {FEATURES.map((f) => (
-            <div key={f.num} style={{ backgroundColor: "#fff", padding: "36px 28px" }}>
-              <div style={{ fontSize: 11, fontWeight: 700, color: "#2D6A4F", letterSpacing: "0.1em", marginBottom: 14 }}>{f.num}</div>
-              <div style={{ width: 28, height: 2, backgroundColor: "#E8730A", marginBottom: 16 }} />
-              <div style={{ fontSize: 15, fontWeight: 900, color: "#0F2018", marginBottom: 12, lineHeight: 1.5 }}>{f.title}</div>
-              <p style={{ fontSize: 12, color: "#3D6A52", lineHeight: 2.0 }}>{f.desc}</p>
+            <div key={f.num} style={{ backgroundColor: "#fff", borderRadius: 8, padding: "28px 22px", borderTop: "4px solid #E8730A" }}>
+              <div style={{ fontSize: 24, fontWeight: 900, color: "#FDDCB5", marginBottom: 12 }}>{f.num}</div>
+              <div style={{ fontSize: 15, fontWeight: 900, color: "#1A1A1A", marginBottom: 10, lineHeight: 1.5 }}>{f.title}</div>
+              <p style={{ fontSize: 12, color: "#555", lineHeight: 1.95 }}>{f.desc}</p>
             </div>
           ))}
         </div>

@@ -26,11 +26,11 @@ export default function FlowPage() {
 
       <main style={{ backgroundColor: "#fff", padding: "80px 28px" }}>
         <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-          <p style={{ fontSize: 14, color: "#3D6A52", lineHeight: 2.0, marginBottom: 64, maxWidth: 680 }}>
+          <p style={{ fontSize: 14, color: "#555555", lineHeight: 2.0, marginBottom: 64, maxWidth: 680 }}>
             ひだまり整骨院 正雀院では、はじめての方も安心してご来院いただけるよう、丁寧な問診・説明を徹底しています。予約不要でいつでもお越しいただけます。
           </p>
 
-          <div style={{ display: "flex", flexDirection: "column", gap: 1, backgroundColor: "#C5DBCF" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: 1, backgroundColor: "#FDDCB5" }}>
             {STEPS.map((s, i) => (
               <div key={i} style={{ display: "grid", gridTemplateColumns: "280px 1fr", backgroundColor: "#fff", gap: 0 }} className="grid-2">
                 <div style={{ position: "relative", overflow: "hidden" }}>
@@ -39,19 +39,19 @@ export default function FlowPage() {
                 </div>
                 <div style={{ padding: "40px 48px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 16 }}>
-                    <span style={{ fontSize: 11, fontWeight: 700, color: "#2D6A4F", letterSpacing: "0.1em" }}>{s.n}</span>
-                    <div style={{ width: 1, height: 20, backgroundColor: "#C5DBCF" }} />
-                    <h2 style={{ fontSize: 22, fontWeight: 900, color: "#0F2018" }}>{s.title}</h2>
+                    <span style={{ fontSize: 11, fontWeight: 700, color: "#52B788", letterSpacing: "0.1em" }}>{s.n}</span>
+                    <div style={{ width: 1, height: 20, backgroundColor: "#FDDCB5" }} />
+                    <h2 style={{ fontSize: 22, fontWeight: 900, color: "#1A1A1A" }}>{s.title}</h2>
                   </div>
-                  <p style={{ fontSize: 14, color: "#3D6A52", lineHeight: 2.1, maxWidth: 500 }}>{s.desc}</p>
+                  <p style={{ fontSize: 14, color: "#555555", lineHeight: 2.1, maxWidth: 500 }}>{s.desc}</p>
                 </div>
               </div>
             ))}
           </div>
 
-          <div style={{ marginTop: 64, backgroundColor: "#1A3D2F", padding: "40px 36px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 24 }}>
+          <div style={{ marginTop: 64, backgroundColor: "#E8730A", padding: "40px 36px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 24 }}>
             <div>
-              <div style={{ fontSize: 12, color: "#5A9E7C", fontWeight: 700, marginBottom: 8 }}>予約不要・当日来院OK</div>
+              <div style={{ fontSize: 12, color: "#52B788", fontWeight: 700, marginBottom: 8 }}>予約不要・当日来院OK</div>
               <div style={{ fontSize: 20, fontWeight: 900, color: "#fff" }}>まずはお気軽にご来院ください</div>
             </div>
             <a href="tel:0663193339" style={{ display: "inline-flex", alignItems: "center", gap: 8, backgroundColor: "#E8730A", color: "#fff", padding: "14px 28px", borderRadius: 2, textDecoration: "none", fontSize: 16, fontWeight: 900 }}>
