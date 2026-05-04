@@ -10,32 +10,25 @@ const STEPS = [
 
 export default function Flow() {
   return (
-    <section id="flow" style={{ backgroundColor: "#FFF4E6", padding: "88px 24px" }}>
-      <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-        <div style={{ textAlign: "center", marginBottom: 52 }}>
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 10, marginBottom: 12 }}>
-            <div style={{ width: 24, height: 1, backgroundColor: "#E8730A" }} />
-            <span style={{ fontSize: 10, color: "#E8730A", fontWeight: 700, letterSpacing: "0.25em" }}>FLOW</span>
-            <div style={{ width: 24, height: 1, backgroundColor: "#E8730A" }} />
+    <section id="flow" style={{ backgroundColor: "#1C0A00", padding: "96px 28px" }}>
+      <div style={{ maxWidth: 1280, margin: "0 auto" }}>
+        <div style={{ marginBottom: 52 }}>
+          <div className="sec-eyebrow">
+            <span style={{ fontSize: 10, color: "#E8730A", fontWeight: 700, letterSpacing: "0.2em" }}>TREATMENT FLOW</span>
           </div>
-          <h2 style={{ fontSize: "clamp(22px, 3.5vw, 36px)", fontWeight: 900, color: "#2D1400", letterSpacing: "-0.02em" }}>施術の流れ</h2>
+          <h2 style={{ fontSize: "clamp(22px, 3vw, 36px)", fontWeight: 900, color: "#fff", letterSpacing: "-0.02em" }}>施術の流れ</h2>
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gap: 16 }} className="grid-4">
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gap: 1, backgroundColor: "rgba(232,115,10,0.2)" }} className="grid-5">
           {STEPS.map((s, i) => (
-            <div key={i} style={{ position: "relative" }}>
-              {i < 4 && (
-                <div className="hide-sp" style={{ position: "absolute", top: 60, right: -12, fontSize: 18, color: "#E8730A", fontWeight: 900, zIndex: 1 }}>›</div>
-              )}
-              <div style={{ backgroundColor: "#fff", border: "1px solid #FDDCB5", borderRadius: 8, overflow: "hidden", height: "100%" }}>
-                <div style={{ position: "relative" }}>
-                  <img src={s.img} alt={s.title} style={{ width: "100%", height: "auto", display: "block" }} />
-                  <div style={{ position: "absolute", top: 8, left: 8, backgroundColor: "#E8730A", color: "#fff", fontSize: 11, fontWeight: 900, padding: "3px 10px", borderRadius: 2 }}>{s.n}</div>
-                </div>
-                <div style={{ padding: "16px 14px" }}>
-                  <div style={{ fontSize: 13, fontWeight: 800, color: "#2D1400", marginBottom: 6 }}>{s.title}</div>
-                  <p style={{ fontSize: 11, color: "#7A4010", lineHeight: 1.8 }}>{s.desc}</p>
-                </div>
+            <div key={i} style={{ backgroundColor: "#2D1400", padding: "0 0 24px" }}>
+              <div style={{ position: "relative", overflow: "hidden" }}>
+                <img src={s.img} alt={s.title} style={{ width: "100%", height: "auto", display: "block", opacity: 0.9 }} />
+                <div style={{ position: "absolute", top: 0, left: 0, backgroundColor: "#E8730A", padding: "6px 12px", fontSize: 11, fontWeight: 900, color: "#fff", letterSpacing: "0.08em" }}>{s.n}</div>
+              </div>
+              <div style={{ padding: "20px 18px 0" }}>
+                <div style={{ fontSize: 13, fontWeight: 800, color: "#fff", marginBottom: 8 }}>{s.title}</div>
+                <p style={{ fontSize: 11, color: "rgba(255,255,255,0.55)", lineHeight: 1.9 }}>{s.desc}</p>
               </div>
             </div>
           ))}

@@ -17,27 +17,29 @@ const SYMPTOMS = [
 
 export default function Symptoms() {
   return (
-    <section id="symptoms" style={{ backgroundColor: "#FFF4E6", padding: "88px 24px" }}>
-      <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-        <div style={{ textAlign: "center", marginBottom: 48 }}>
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 10, marginBottom: 12 }}>
-            <div style={{ width: 24, height: 1, backgroundColor: "#E8730A" }} />
-            <span style={{ fontSize: 10, color: "#E8730A", fontWeight: 700, letterSpacing: "0.25em" }}>SYMPTOMS & TREATMENT</span>
-            <div style={{ width: 24, height: 1, backgroundColor: "#E8730A" }} />
+    <section id="symptoms" style={{ backgroundColor: "#fff", padding: "96px 28px" }}>
+      <div style={{ maxWidth: 1280, margin: "0 auto" }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: 48, flexWrap: "wrap", gap: 16 }}>
+          <div>
+            <div className="sec-eyebrow">
+              <span style={{ fontSize: 10, color: "#E8730A", fontWeight: 700, letterSpacing: "0.2em" }}>SYMPTOMS & TREATMENT</span>
+            </div>
+            <h2 style={{ fontSize: "clamp(22px, 3vw, 36px)", fontWeight: 900, color: "#1C0A00", letterSpacing: "-0.02em" }}>症状・施術メニュー</h2>
           </div>
-          <h2 style={{ fontSize: "clamp(22px, 3.5vw, 36px)", fontWeight: 900, color: "#2D1400", letterSpacing: "-0.02em" }}>症状・施術メニュー</h2>
-          <p style={{ fontSize: 13, color: "#7A4010", marginTop: 10 }}>こんなお悩みはひだまり整骨院にご相談ください</p>
+          <p style={{ fontSize: 12, color: "#7A4010", maxWidth: 320, lineHeight: 1.9 }}>
+            こんなお悩みはひだまり整骨院にご相談ください。各種症状のページで詳しい治療法をご確認いただけます。
+          </p>
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 14 }} className="grid-4">
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 1, backgroundColor: "#F0DCC0" }} className="grid-4">
           {SYMPTOMS.map(s => (
             <a key={s.name} href={s.href} target="_blank" rel="noopener noreferrer"
-              style={{ backgroundColor: "#fff", border: "1px solid #FDDCB5", borderRadius: 6, padding: "20px 16px", textDecoration: "none", display: "block", transition: "border-color 0.2s" }}
-              onMouseEnter={e => (e.currentTarget as HTMLElement).style.borderColor = "#E8730A"}
-              onMouseLeave={e => (e.currentTarget as HTMLElement).style.borderColor = "#FDDCB5"}>
-              <div style={{ fontSize: 14, fontWeight: 800, color: "#2D1400", marginBottom: 6 }}>{s.name}</div>
+              style={{ backgroundColor: "#FFFAF5", padding: "24px 20px", textDecoration: "none", display: "block", position: "relative" }}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.backgroundColor = "#FFF4E6"; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.backgroundColor = "#FFFAF5"; }}>
+              <div style={{ fontSize: 14, fontWeight: 800, color: "#1C0A00", marginBottom: 6 }}>{s.name}</div>
               <div style={{ fontSize: 11, color: "#7A4010", lineHeight: 1.6 }}>{s.desc}</div>
-              <div style={{ fontSize: 10, color: "#E8730A", fontWeight: 700, marginTop: 10 }}>詳しくはこちら →</div>
+              <div style={{ fontSize: 10, color: "#E8730A", fontWeight: 700, marginTop: 12 }}>詳細 →</div>
             </a>
           ))}
         </div>

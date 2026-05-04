@@ -4,22 +4,48 @@
 html { scroll-behavior: smooth; }
 
 body {
-  background: #FFFAF5;
-  color: #2D1400;
+  background: #fff;
+  color: #1C0A00;
   font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
+/* Section heading — left-aligned accent bar (different from nishida-lp's center line pattern) */
+.sec-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.sec-eyebrow::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: #E8730A;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.grid-2      { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.grid-3      { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.grid-4      { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.grid-5      { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+.footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 32px; }
+
+@media (max-width: 1023px) {
+  .grid-5 { grid-template-columns: repeat(3, 1fr) !important; }
+}
+
 @media (max-width: 767px) {
-  .grid-2      { grid-template-columns: 1fr !important; gap: 24px !important; }
-  .grid-3      { grid-template-columns: 1fr !important; gap: 16px !important; }
-  .grid-4      { grid-template-columns: 1fr 1fr !important; gap: 12px !important; }
-  .footer-grid { grid-template-columns: 1fr !important; gap: 20px !important; }
-  .hide-sp     { display: none !important; }
+  .grid-2, .grid-3, .grid-4, .grid-5, .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  .hide-sp { display: none !important; }
+  .show-sp { display: block !important; }
 }
-@media (min-width: 768px) and (max-width: 1023px) {
-  .grid-4 { grid-template-columns: repeat(3, 1fr) !important; }
-}
+
 @media (min-width: 768px) {
   .show-sp { display: none !important; }
 }
