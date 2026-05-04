@@ -23,7 +23,7 @@ export default function Header() {
             月〜金 9:00〜12:00 / 15:00〜20:00　土 9:00〜12:00　日祝 休診
           </span>
           <a href="tel:0663193339" style={{ fontSize: 13, fontWeight: 700, color: "#D96B0B", textDecoration: "none", letterSpacing: "0.04em" }}>
-            ☎ 06-6319-3339
+            06-6319-3339
           </a>
         </div>
       </div>

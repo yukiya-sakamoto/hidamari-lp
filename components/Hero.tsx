@@ -51,13 +51,13 @@ export default function Hero() {
       <div style={{ backgroundColor: "#fff", borderTop: "1px solid #EDE0CC", borderBottom: "1px solid #EDE0CC", marginTop: 0 }}>
         <div style={{ maxWidth: 1280, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(4, 1fr)" }} className="grid-4">
           {[
-            { icon: "🏥", label: "各種保険取扱", sub: "健康保険・交通事故・労災" },
-            { icon: "🚶", label: "予約不要", sub: "当日来院・飛び込みOK" },
-            { icon: "🚗", label: "駐車場完備", sub: "2台・駐車料金当院負担" },
-            { icon: "🚉", label: "駅から徒歩4分", sub: "阪急 正雀駅より" },
+            { label: "各種保険取扱", sub: "健康保険・交通事故・労災" },
+            { label: "予約不要", sub: "当日来院・飛び込みOK" },
+            { label: "駐車場完備", sub: "2台・駐車料金当院負担" },
+            { label: "駅から徒歩4分", sub: "阪急 正雀駅より" },
           ].map((item, i) => (
             <div key={item.label} style={{ padding: "18px 24px", borderRight: i < 3 ? "1px solid #EDE0CC" : "none", display: "flex", alignItems: "center", gap: 12 }}>
-              <div style={{ fontSize: 22, flexShrink: 0 }}>{item.icon}</div>
+              <div style={{ width: 4, height: 32, backgroundColor: "#D96B0B", borderRadius: 2, flexShrink: 0 }} />
               <div>
                 <div style={{ fontSize: 14, fontWeight: 700, color: "#2D2D2D" }}>{item.label}</div>
                 <div style={{ fontSize: 12, color: "#888", marginTop: 2 }}>{item.sub}</div>
