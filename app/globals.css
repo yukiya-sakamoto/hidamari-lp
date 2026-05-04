@@ -5,12 +5,21 @@ html { scroll-behavior: smooth; }
 
 body {
   background: #fff;
-  color: #1C0A00;
+  color: #0F2018;
   font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
-/* Section heading — left-aligned accent bar (different from nishida-lp's center line pattern) */
+/* Color tokens:
+   Green primary:  #2D6A4F  (forest green)
+   Green dark:     #1A3D2F
+   Green light bg: #F0F7F3
+   Green border:   #C5DBCF
+   Orange accent:  #E8730A
+   Orange light:   #FFF4E6
+   White:          #FFFFFF
+*/
+
 .sec-eyebrow {
   display: flex;
   align-items: center;

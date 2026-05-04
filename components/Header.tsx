@@ -1,41 +1,44 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 
 const NAV = [
-  { label: "院長ご挨拶", href: "#about" },
-  { label: "症状・施術", href: "#symptoms" },
-  { label: "施術の流れ", href: "#flow" },
-  { label: "患者様の声", href: "#voice" },
-  { label: "スタッフ", href: "#staff" },
-  { label: "料金", href: "#pricing" },
-  { label: "アクセス", href: "#access" },
+  { label: "院長ご挨拶", href: "/#about" },
+  { label: "症状・施術", href: "/symptoms/" },
+  { label: "施術の流れ", href: "/flow/" },
+  { label: "患者様の声", href: "/#voice" },
+  { label: "スタッフ", href: "/staff/" },
+  { label: "料金", href: "/pricing/" },
+  { label: "アクセス", href: "/access/" },
 ];
 
 export default function Header() {
   const [open, setOpen] = useState(false);
   return (
-    <header style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 100, backgroundColor: "#2D1400", backdropFilter: "blur(8px)" }}>
+    <header style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 100, backgroundColor: "#1A3D2F" }}>
       <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 28px", height: 64, display: "flex", alignItems: "center", justifyContent: "space-between", gap: 16 }}>
-        <a href="/" style={{ textDecoration: "none", flexShrink: 0 }}>
-          <div style={{ fontSize: 16, fontWeight: 900, color: "#fff", lineHeight: 1.2 }}>ひだまり整骨院 <span style={{ color: "#E8730A" }}>正雀院</span></div>
-          <div style={{ fontSize: 10, color: "rgba(255,255,255,0.5)", fontWeight: 500, letterSpacing: "0.12em", marginTop: 2 }}>HIDAMARI SEIKOTSU-IN SHOJAKU</div>
-        </a>
+        <Link href="/" style={{ textDecoration: "none", flexShrink: 0 }}>
+          <div style={{ fontSize: 15, fontWeight: 900, color: "#fff", lineHeight: 1.2 }}>
+            ひだまり整骨院 <span style={{ color: "#E8730A" }}>正雀院</span>
+          </div>
+          <div style={{ fontSize: 10, color: "rgba(255,255,255,0.4)", letterSpacing: "0.12em", marginTop: 2 }}>HIDAMARI SEIKOTSU-IN SHOJAKU</div>
+        </Link>
 
-        <nav className="hide-sp" style={{ display: "flex", gap: 24, flex: 1, justifyContent: "center" }}>
+        <nav className="hide-sp" style={{ display: "flex", gap: 22, flex: 1, justifyContent: "center" }}>
           {NAV.map(n => (
-            <a key={n.label} href={n.href}
-              style={{ fontSize: 12, color: "rgba(255,255,255,0.7)", textDecoration: "none", fontWeight: 600, whiteSpace: "nowrap", letterSpacing: "0.02em" }}
+            <Link key={n.label} href={n.href}
+              style={{ fontSize: 12, color: "rgba(255,255,255,0.75)", textDecoration: "none", fontWeight: 600, whiteSpace: "nowrap" }}
               onMouseEnter={e => (e.currentTarget as HTMLElement).style.color = "#E8730A"}
-              onMouseLeave={e => (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.7)"}>
+              onMouseLeave={e => (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.75)"}>
               {n.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
-        <a href="tel:0663193339" className="hide-sp" style={{ display: "inline-flex", alignItems: "center", gap: 6, border: "1px solid #E8730A", color: "#E8730A", padding: "8px 18px", borderRadius: 2, textDecoration: "none", fontSize: 13, fontWeight: 800, flexShrink: 0, letterSpacing: "0.04em" }}>
-          <svg width="13" height="13" fill="none" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .98h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.12 6.12l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="#E8730A" strokeWidth="1.5" strokeLinecap="round"/></svg>
+        <Link href="tel:0663193339" className="hide-sp" style={{ display: "inline-flex", alignItems: "center", gap: 6, border: "1px solid #E8730A", color: "#E8730A", padding: "8px 18px", borderRadius: 2, textDecoration: "none", fontSize: 13, fontWeight: 800, flexShrink: 0 }}>
+          <svg width="12" height="12" fill="none" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .98h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.12 6.12l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="#E8730A" strokeWidth="1.5" strokeLinecap="round"/></svg>
           06-6319-3339
-        </a>
+        </Link>
 
         <button onClick={() => setOpen(!open)} className="show-sp" style={{ background: "none", border: "none", cursor: "pointer", padding: 4 }}>
           <svg width="22" height="16" viewBox="0 0 22 16" fill="none">
@@ -47,16 +50,16 @@ export default function Header() {
       </div>
 
       {open && (
-        <div style={{ backgroundColor: "#1C0A00", borderTop: "1px solid rgba(232,115,10,0.3)", padding: "8px 20px 20px" }}>
+        <div style={{ backgroundColor: "#0F2018", borderTop: "1px solid rgba(255,255,255,0.08)", padding: "8px 20px 20px" }}>
           {NAV.map(n => (
-            <a key={n.label} href={n.href} onClick={() => setOpen(false)}
-              style={{ display: "block", padding: "13px 0", fontSize: 14, color: "rgba(255,255,255,0.8)", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.08)", fontWeight: 600 }}>
+            <Link key={n.label} href={n.href} onClick={() => setOpen(false)}
+              style={{ display: "block", padding: "13px 0", fontSize: 14, color: "rgba(255,255,255,0.8)", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.07)", fontWeight: 600 }}>
               {n.label}
-            </a>
+            </Link>
           ))}
-          <a href="tel:0663193339" style={{ display: "block", marginTop: 16, backgroundColor: "#E8730A", color: "#fff", textAlign: "center", padding: "14px", borderRadius: 2, textDecoration: "none", fontSize: 17, fontWeight: 900 }}>
+          <Link href="tel:0663193339" style={{ display: "block", marginTop: 16, backgroundColor: "#E8730A", color: "#fff", textAlign: "center", padding: "14px", borderRadius: 2, textDecoration: "none", fontSize: 17, fontWeight: 900 }}>
             06-6319-3339
-          </a>
+          </Link>
         </div>
       )}
     </header>
